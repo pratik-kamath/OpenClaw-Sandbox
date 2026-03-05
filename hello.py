@@ -13,4 +13,4 @@ def greet_name(name: str) -> str:
 
 
 def current_time_utc() -> str:
-    return datetime.now(UTC).strftime("%H:%M UTC")
+    return f"{greet()} It is {datetime.now(UTC).strftime('%H:%M UTC')}"

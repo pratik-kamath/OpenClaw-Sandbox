@@ -22,7 +22,7 @@ class TestHello(unittest.TestCase):
         fixed_time = datetime(2026, 3, 5, 12, 34, tzinfo=UTC)
         with patch("hello.datetime") as mock_datetime:
             mock_datetime.now.return_value = fixed_time
-            self.assertEqual(current_time_utc(), "12:34 UTC")
+            self.assertEqual(current_time_utc(), "Hello, World! It is 12:34 UTC")
 
 
 if __name__ == "__main__":
